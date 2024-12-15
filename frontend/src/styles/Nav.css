@@ -1,0 +1,16 @@
+.nav-bar {
+  padding: 1.2em 2em;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  border-bottom: 1px solid #eeebeb;
+}
+ .nav-bar h3 {
+  background: linear-gradient(#ff7eb3, #ff758c, #fb3463);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+
+

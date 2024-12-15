@@ -1,0 +1,50 @@
+.side-bar {
+  padding: 1.2em 1em;
+  background-color: rgb(16, 16, 16);
+  color: white;
+  min-height: 100vh;
+  width: 20%;
+}
+.side-bar ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 0.7em;
+  margin-top: 1.2em;
+}
+
+.side-bar ul li a {
+  text-decoration: none;
+  display: flex;
+  gap: 0.7em;
+  align-items: center;
+  font-size: 1rem;
+  color: white;
+  padding: 0.5em 0.8em;
+  border-radius: 0.3em;
+  transition: all 0.2s ease-in;
+}
+.side-bar ul li a:hover {
+  background-color: white;
+  color: black;
+}
+.profile {
+  display: flex;
+  justify-content: space-between;
+}
+.bg-collapse {
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.bg-collapse:hover{
+  opacity: 0.8;
+}
+.material-symbols-outlined {
+  color: black;
+  font-size: 22px;
+  font-weight: 600;
+}

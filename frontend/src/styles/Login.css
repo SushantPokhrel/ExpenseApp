@@ -1,0 +1,85 @@
+.login-flex {
+  display: flex;
+  justify-content: center;
+  padding: 3em;
+  font-size: 14px;
+}
+
+.img-login {
+  border-radius: 8px;
+}
+.login-left {
+  max-width: 60%;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+  width: 40%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+form h2{
+  color: black;
+  text-align: center;
+}
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.25);
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #6366f1;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #4f46e5;
+}
+
+button[type="submit"]:active {
+  background-color: #4338ca;
+}
+
+button[type="submit"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5);
+}
+
+a {
+  color: crimson;
+}
+.signUp {
+  display: flex;
+  gap: 0.8em;
+}
