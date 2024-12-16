@@ -13,7 +13,7 @@ function App() {
           <Route path="/" element={<DashBoard />} />
           <Route path="/expense" element={<Expense />} />
         </Route>
-        <Route path="" element={<Login />} />
+        <Route path="/" element={<Login />} />
       </Routes>
     </BrowserRouter>
   );
