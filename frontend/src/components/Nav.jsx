@@ -5,7 +5,6 @@ function Nav() {
     <nav className="nav-bar">
       <div>
         <h3>TrackExpense</h3>{" "}
-      
       </div>
       
     </nav>
