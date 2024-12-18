@@ -1,5 +1,5 @@
 const {Router}= require('express');
-const { addIncome,getIncomes,deleteIncome } = require('../controllers/income');
+const { addIncome, getIncomes, deleteIncome } = require('../controllers/income');
 const router = Router();
 
 router.get('/'),(req, res)=>{

@@ -20,7 +20,6 @@ try {
 } catch (error) {
     res.status(500).json({ message: "Server Error: " + error.message });
 }
-console.log(income);
 };
 
 exports.getIncomes= async (req, res) => {
@@ -42,8 +41,5 @@ exports.deleteIncome = async (req, res) => {
   } catch (error) {
     res.status(500).json({ message:"error deleting"});
   }
-  
-  
-
 };
 

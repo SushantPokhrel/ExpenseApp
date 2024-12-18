@@ -16,6 +16,13 @@ function Transaction() {
           <input type="number" name="" id="" placeholder="Enter amount" />
         </div>{" "}
         <div>
+          <label htmlFor="">Select Type</label>
+          <select name="category" id="category">
+            <option value="Other">Income</option>
+            <option value="Other">Expence</option>
+          </select>
+        </div>
+        <div>
           <label htmlFor="">Select Category</label>
           <select name="category" id="category">
             <option value="Rent">Rent</option>
@@ -30,6 +37,9 @@ function Transaction() {
           <label htmlFor="description">Description</label>
           <textarea name="description" id=""></textarea>
         </div>
+        <din className="button">
+          <button type="submit">Submit</button>
+        </din>
       </form>
     </div>
   );
