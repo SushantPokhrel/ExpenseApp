@@ -22,3 +22,28 @@ try {
 }
 console.log(income);
 };
+
+exports.getIncomes= async (req, res) => {
+try {
+  const income = await Income.find().sort({createdAt:-1})
+  res.status(200).json(income);
+} catch (error) {
+  res.status(500).json({ message: "Error: " + error.message });
+}
+};
+
+exports.deleteIncome = async (req, res) => {
+  const {id} = req.params;
+  try {
+    Income.findByIdAndDelete(id)
+  .then((income) => {
+    res.status(200).json({ message: "Income deleted"});
+  })
+  } catch (error) {
+    res.status(500).json({ message:"error deleting"});
+  }
+  
+  
+
+};
+
