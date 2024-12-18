@@ -1,0 +1,11 @@
+.wrap-transaction h2 {
+  text-align: center;
+}
+.wrap-transaction {
+  display: flex;
+  flex-direction: row-reverse;
+  
+}
+.expense-history {
+  flex:1;
+}
