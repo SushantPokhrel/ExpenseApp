@@ -17,6 +17,5 @@ db();
 app.use('/transaction',transRoutes)
 
 app.listen(PORT,()=>{
-    
     console.log("Server is started at port:",PORT);
 })
