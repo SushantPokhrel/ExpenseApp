@@ -3,6 +3,7 @@ exports.addIncome = async (req, res) => {
   const { title, amount, type, date, category, description } = req.body;
 
   const income = Income({
+    userId: req.user._id,
     title,
     amount,
     type,
@@ -24,7 +25,7 @@ try {
 
 exports.getIncomes= async (req, res) => {
 try {
-  const income = await Income.find().sort({createdAt:-1})
+  const income = await Income.find({userId: req.user._id}).sort({createdAt:-1})
   res.status(200).json(income);
 } catch (error) {
   res.status(500).json({ message: "Error: " + error.message });
