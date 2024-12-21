@@ -6,7 +6,6 @@ function FormLogin() {
   const [isSigned, setIsSigned] = useState(true);
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle login logic here
     console.log("Email:", email);
     console.log("Password:", password);
   };
@@ -15,7 +14,7 @@ function FormLogin() {
     setIsSigned((prev) => !prev);
   }
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="form-login">
       <h2>{isSigned ? "User Login" : "User Sign Up"}</h2>
       <div>
         <label>Email:</label>

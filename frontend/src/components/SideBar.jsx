@@ -46,7 +46,7 @@ const SideBar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/" onClick={() => handleActive("contact")} className={active === "contact"? "active":""}>
+            <Link to="/login" onClick={() => handleActive("contact")} className={active === "contact"? "active":""}>
               <i className="material-icons">contact_page</i>
               <span className="link-text">Contact</span>
             </Link>

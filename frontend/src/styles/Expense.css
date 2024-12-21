@@ -4,8 +4,40 @@
 .wrap-transaction {
   display: flex;
   flex-direction: row-reverse;
-  
+  gap: 3em;
 }
 .expense-history {
-  flex:1;
+  flex: 1;
+}
+.expense-history ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  gap: 0.3em;
+  margin-top: 2em;
+  padding: 0 1em;
+}
+.expense-history ul li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4em 0.3em;
+  border-bottom: 1px solid gray;
+}
+.flex-expense {
+  display: flex;
+  gap: 0.8em;
+  align-items: center;
+}
+.flex-expense .close-li {
+  background-color: crimson;
+  color: white;
+  cursor: pointer;
+  visibility: hidden;
+}
+.flex-expense:hover {
+  & .close-li {
+    visibility: visible;
+  }
 }
