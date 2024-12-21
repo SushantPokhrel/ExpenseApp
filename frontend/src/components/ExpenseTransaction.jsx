@@ -56,6 +56,13 @@ function Transaction() {
           />
         </div>{" "}
         <div>
+          <label htmlFor="">Select Type</label>
+          <select name="category" id="category">
+            <option value="Other">Income</option>
+            <option value="Other">Expence</option>
+          </select>
+        </div>
+        <div>
           <label htmlFor="">Select Category</label>
           <select
             name="category"
@@ -83,6 +90,9 @@ function Transaction() {
         <div>
           <button>Add transaction</button>
         </div>
+        <din className="button">
+          <button type="submit">Submit</button>
+        </din>
       </form>
     </div>
   );
