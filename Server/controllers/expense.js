@@ -3,6 +3,7 @@ exports.addExpense = async (req, res) => {
   const { title, amount, type, date, category, description } = req.body;
 
   const expense = Expense({
+    userId: req.user._id,
     title,
     amount,
     type,
@@ -24,7 +25,7 @@ try {
 
 exports.getExpenses= async (req, res) => {
 try {
-  const expense = await Expense.find().sort({createdAt:-1})
+  const expense = await Expense.find({userId: req.user._id}).sort({createdAt:-1})
   res.status(200).json(expense);
 } catch (error) {
   res.status(500).json({ message: "Error: " + error.message });
