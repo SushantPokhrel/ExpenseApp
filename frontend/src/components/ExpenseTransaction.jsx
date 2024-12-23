@@ -24,8 +24,15 @@ function Transaction() {
       {
         title: expenseData.title,
         amount: expenseData.amount,
+        category: expenseData.category,
       },
     ]);
+    setExpenseData({
+      title: "",
+      amount: "",
+      category: "Rent",
+      description: "",
+    });
   }
 
   return (
@@ -41,6 +48,7 @@ function Transaction() {
             placeholder="Enter title"
             onChange={handleData}
             required
+            value={expenseData.title}
           />
         </div>
         <div>
@@ -53,15 +61,9 @@ function Transaction() {
             min={0}
             onChange={handleData}
             required
+            value={expenseData.amount}
           />
         </div>{" "}
-        <div>
-          <label htmlFor="">Select Type</label>
-          <select name="category" id="category">
-            <option value="Other">Income</option>
-            <option value="Other">Expence</option>
-          </select>
-        </div>
         <div>
           <label htmlFor="">Select Category</label>
           <select
@@ -85,14 +87,12 @@ function Transaction() {
             id="description"
             placeholder="optional"
             onChange={handleData}
+            value={expenseData.description}
           ></textarea>
         </div>
         <div>
           <button>Add transaction</button>
         </div>
-        <din className="button">
-          <button type="submit">Submit</button>
-        </din>
       </form>
     </div>
   );
