@@ -88,7 +88,7 @@ function ExpenseTransaction() {
           ></textarea>
         </div>
         <div>
-          <button>+ Add expense</button>
+          <button className="submit-red">Add expense</button>
         </div>
       </form>
     </div>

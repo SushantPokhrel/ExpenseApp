@@ -58,12 +58,12 @@ function Expense() {
                     {/* <div className="red-dot">.</div> */}
                     <div className="flex-right-history">
                       <h3 className="title">
-                        <span></span>
+                        <span class="green-dot"></span>
                         {item.title}
                       </h3>
                       <p className="description">{item.description}</p>
                     </div>
-                    <span className="amount">$ {item.amount}</span>
+                    <span className="amount amt-green">$ {item.amount}</span>
                   </div>
                 </li>
               ))
@@ -76,7 +76,7 @@ function Expense() {
         <div className="tot-exp-div">
           <p>
             {/* Displaying the dynamically calculated total */}
-            Total Income: <span className="tot-exp-amt">$ {total}</span>
+            Total Income: <span className="tot-exp-amt tot-exp-amt-green">$ {total}</span>
           </p>
         </div>
       </div>

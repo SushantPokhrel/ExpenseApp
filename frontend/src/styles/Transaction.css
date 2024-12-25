@@ -9,7 +9,6 @@
   margin-bottom: 20px;
   /* color: #333; */
   text-align: center;
-  
 }
 
 .transaction form div {
@@ -58,16 +57,23 @@
   display: block;
   width: 100%;
   padding: 14px 0;
-  background-color: #007bff;
   color: #fff;
   border: none;
   border-radius: 1.6em;
   font-size: 14px;
   cursor: pointer;
   transition: background-color 0.3s;
+}
+.transaction form .submit-green {
+  background-color: rgb(2, 144, 2);
 
 }
-
-.transaction form button:hover {
-  background-color: #0056b3;
+.transaction form .submit-red {
+  background-color: red;
+}
+.transaction form .submit-green:hover {
+  background-color: green;
+}
+.transaction form .submit-red:hover {
+  background-color: rgb(225, 4, 4);
 }

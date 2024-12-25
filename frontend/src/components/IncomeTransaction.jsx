@@ -88,7 +88,7 @@ function IncomeTransaction() {
           ></textarea>
         </div>
         <div>
-          <button type="submit">+ Add income</button>
+          <button type="submit" className="submit-green">Add income</button>
         </div>
       </form>
     </div>
