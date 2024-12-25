@@ -1,9 +1,6 @@
-.wrap-transaction h2 {
-  text-align: center;
-}
-.transaction{
+.transaction {
   /* box-shadow: 0 0 8px #fff; */
-  background-color: white;
+  /* background-color: white; */
   margin-left: 1em;
 }
 .wrap-transaction {
@@ -13,53 +10,76 @@
 }
 .expense-history {
   flex: 1;
+  margin: 1em;
 }
-.expense-history ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+ul {
   list-style: none;
-  gap: 0.4em;
-  margin: 2em;
-  padding: 0 1em;
 }
-.expense-history ul li {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0.6em;
-  background-color: white;
-  border-radius: 6px;
+.ul-expense {
+  margin: 1em 0;
 }
 .flex-expense {
+  border-radius: 1.1em;
   display: flex;
-  gap: 0.8em;
+  gap: 1em;
   align-items: center;
-}
-.flex-expense p{
-  display: flex;
-  gap: 0.4em;
-  align-items: center;
-  font-size: 18px;
-  font-weight: bold;
-}
-.flex-expense .amount-expense{
-  font-size: 18px;
-  color: red;
-  font-weight: bold;
-}
-.logo-category{
-  background-color: #f7f7f7;
-  padding: 0.2em;
-  border-radius: 4px;
-}
-.tot-exp{
-
-  color: red;
-}
-.tot-exp-container {
+  padding: 0.78em 1.4em;
   background-color: white;
-  border-radius: 7px;
-  margin: 2em;
-padding: 0.7em;
+  margin-bottom: 0.7em;
+  box-shadow: 0 0 4px rgb(207, 207, 207);
+}
+.flex-expense .title span {
+  display: inline-block;
+  background-color: red;
+  border-radius: 50%;
+  padding: 4px;
+  margin-right: 0.5em;
+}
+.flex-expense .logo-history {
+  font-size: 1.8rem;
+  background-color: rgb(234, 233, 233);
+  padding: 0.22em 0.2em;
+  border-radius: 0.3em;
+}
+.title-description-container {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(180, 7, 180);
+}
+.title-description-container .description {
+  font-size: 14px;
+  color: rgb(131, 4, 131);
+}
+.title-description-container .title {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.flex-right-history {
+  display: flex;
+  flex-direction: column;
+}
+.flex-expense .amount {
+  color: red;
+}
+.tot-exp-div {
+  font-size: 1.5rem;
+  margin-top: 2em;
+  background-color: white;
+  padding: 0.78em 1.4em;
+  border-radius: 1.2em;
+  font-weight: 500;
+  box-shadow: 0 0 4px rgb(207, 207, 207);
+}
+.tot-exp-amt {
+  color: red;
+}
+.expense-history h2{
+  text-align: center;
+}
+.no-history{
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: center;
 }
