@@ -25,6 +25,7 @@
 .transaction input[type="text"],
 .transaction input[type="number"],
 .transaction select,
+.transaction input[type="date"],
 .transaction textarea {
   width: 100%;
   padding: 10px;
@@ -36,6 +37,7 @@
 
 .transaction input[type="text"]:focus,
 .transaction input[type="number"]:focus,
+.transaction input[type="date"]:focus,
 .transaction select:focus,
 .transaction textarea:focus {
   border-color: #007bff;
@@ -66,7 +68,6 @@
 }
 .transaction form .submit-green {
   background-color: rgb(2, 144, 2);
-
 }
 .transaction form .submit-red {
   background-color: red;

@@ -1,9 +1,13 @@
-import React from 'react';
+import React from "react";
+import LineGraph from "../components/LineGraph";
+import RecentHistory from "../components/RecentHistory";
+import "../styles/DashBoard.css";
 
 function DashBoard() {
   return (
-    <div>
-     <h2> DashBoard</h2>
+    <div className="graph-container">
+      <LineGraph />
+      <RecentHistory />
     </div>
   );
 }

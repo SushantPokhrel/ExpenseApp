@@ -60,7 +60,10 @@ function Expense() {
                         <span></span>
                         {item.title}
                       </h3>
-                      <p className="description">{item.description}</p>
+                      <p className="description">
+                        <span>{item.description}</span>
+                        <span>{item.date}</span>
+                      </p>
                     </div>
                     <span className="amount">$ {item.amount}</span>
                   </div>

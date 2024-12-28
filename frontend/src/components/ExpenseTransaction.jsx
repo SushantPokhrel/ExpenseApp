@@ -7,6 +7,7 @@ function ExpenseTransaction() {
     amount: "",
     category: "Rent",
     description: "",
+    date:""
   });
   const { setExpenseHistory } = useContext(Context);
 
@@ -26,6 +27,7 @@ function ExpenseTransaction() {
         amount: expenseData.amount,
         category: expenseData.category,
         description: expenseData.description,
+        date:expenseData.date
       },
     ]);
     setExpenseData({
@@ -33,6 +35,7 @@ function ExpenseTransaction() {
       amount: "",
       category: "Rent",
       description: "",
+      date:""
     });
   }
 
@@ -77,6 +80,17 @@ function ExpenseTransaction() {
             <option value="Transport">Transport</option>
             <option value="Other">Other</option>
           </select>
+        </div>
+        <div>
+          <input
+            type="date"
+            name="date"
+            id=""
+            placeholder="Select date"
+            onChange={handleData}
+            value={expenseData.date}
+            required
+          />
         </div>
         <div>
           <textarea

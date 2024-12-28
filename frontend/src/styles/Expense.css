@@ -50,9 +50,13 @@ ul {
   color: rgb(180, 7, 180);
 }
 .title-description-container .description {
-  font-size: 14px;
+  font-size: 12px;
   color: rgb(131, 4, 131);
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
 }
+
 .title-description-container .title {
   font-weight: 500;
   font-size: 1.1rem;
